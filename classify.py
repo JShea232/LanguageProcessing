@@ -34,12 +34,12 @@ for line in f:
     data.append([float(p) for p in parts[0:-1]])
     target.append(float(parts[-1]))
 
-## conver to numpy arrays
+## convert to numpy arrays
 nptarget = np.array(target)
 npdata = np.array(data)
 
 ## see how many features and training examples you have
-print("You have ", npdata.shape[0], "training instanaces")
+print("You have ", npdata.shape[0], "training instances")
 print("You have ", npdata.shape[1], "features")
 
 ## very, very basic classification with Naive Bayes classifier
